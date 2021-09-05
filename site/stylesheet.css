@@ -1,0 +1,74 @@
+html {
+  color: var(--fg);
+  background-color: var(--bg);
+  width: 800px;
+  margin: auto;
+  padding-bottom: 2em;
+  text-transform: lowercase;
+}
+
+body {
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  padding: 0.125em 0.25em 0.125em 0.25em;
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+dfn {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: var(--accent);
+}
+
+h1 {
+  padding: 0.5em;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+h2 {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--accent);
+}
+
+p:first-letter {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+pre {
+  font-size: 1em;
+  padding: 0.75em;
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+p {
+  text-indent: 1.5em;
+}
