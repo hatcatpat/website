@@ -180,9 +180,6 @@ void page(char *name) {
   html_open();
 
   head_open();
-  write("<script type='text/javascript' "
-        "src='https://livejs.com/live.js'></script>");
-
   title(replace(name, '_', ' '));
   menu();
   head_close();
