@@ -57,6 +57,29 @@ a {
   color: var(--accent);
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+}
+
+img {
+  border-style: dotted;
+  border-width: 2px;
+  border-radius: 8px;
+  border-color: var(--accent);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+}
+
 p:first-letter {
   font-weight: bold;
   color: var(--accent);

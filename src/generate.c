@@ -122,12 +122,10 @@ void random_list() {
 //------------------------------------------------------
 void menu() {
   random_list();
+  // todo: use an external menu.html for this
   write("<li><a href='pat_lives_here.html'>home</a></li>"
         "<li><a href='hmm.html'>hmm</a></li>"
-        "<li><a href='vm.html'>code</a></li>"
-        "<li><a href='www.google.com'>art</a></li>"
-        "<li><a href='www.google.com'>sounds</a></li>"
-        "<li><a href='www.google.com'>etc</a></li>");
+        "<li><a href='portfolio.html'>portfolio</a></li>");
   write("</ol>");
 }
 
@@ -164,6 +162,7 @@ void page(char *name) {
   size_t filename_sz = strlen(name) + strlen(OUTPUT_HTML_FILE_FMT);
   char *filename = malloc(filename_sz);
 
+  // todo: use snprintf null to get size of buffer
   snprintf(filename, filename_sz, OUTPUT_HTML_FILE_FMT, name);
 
   fp = fopen(filename, "w");

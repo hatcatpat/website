@@ -1,0 +1,162 @@
+<p>
+  here lies a collection of art and code and code-art projects of my own
+  creation
+</p>
+
+<h2>code: get it <a href="https://www.github.com/hatcatpat">here</a></h2>
+
+<ul>
+  <li>
+    <a href="https://github.com/hatcatpat/compakt">compakt</a>: This project is
+    an audio and gui library for quick prototyping of audio applications,
+    written entirely in C using SDL, Jack, and FFTW. I wanted to build a tool
+    that would allow me to create my own “instruments”, consisting of various
+    audio effects and controls. I implemented all of the audio algorithms from
+    scratch, including an FFT based pitch shifter, frequency scope, comb/delay
+    lines, and biquad filters
+    <br />
+    <br />
+    <img
+      src="../res/compakt.png"
+      alt="one possible compakt program"
+      width="300px"
+    />
+    <div class="center">
+      <a href="https://www.instagram.com/p/CYounOWgoI3/">here video</a>,
+      <a href="https://www.instagram.com/p/CX_qNYFNfol/">here also video</a>
+    </div>
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://github.com/hatcatpat/jisp">jisp</a>: a Lisp-to-Javascript
+    transpiler, written entirely in Javascript. It uses a homemade variant of
+    Lisp, which includes: let bindings, macros, lambda functions, and globals.
+    Additionally, it has full Javascript interop (essential for this kind of
+    task). It is also very small, with around 300 sloc, and fast enough to be
+    used as a REPL
+    <br />
+    <br />
+    <img src="../res/jisp.png" alt="example jisp code" width="400px" />
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://github.com/hatcatpat/Oscvst">Oscvst</a>: a VST3 plugin that
+    allows you to send OSC (Open Sound Control) messages from your DAW. It can
+    act as a midi keyboard (i.e, trigger a message whenever a note is pressed),
+    or as a set of VST parameters (i.e, send a message whenever an automation
+    parameter is changed). Oscvst can be used best when controlling a visual
+    application, as it allows you to perfectly sync specific events in the DAW
+    with the visual output. It was built using the JUCE C++ library
+    <br />
+    <br />
+    <img src="../res/oscvst.png" alt="oscvst main screen" width="400px" />
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://github.com/hatcatpat/la">la</a>/<a
+      href="https://github.com/hatcatpat/ca"
+      >ca</a
+    >: la (lua audio) and ca (C audio) are two experiments with livecoding audio
+    on the audio thread. My desire was to get as close to the raw audio code as
+    possible, while still maintaining the “live” aspect of “livecoding”. Lua is
+    an interpreted language, and as such it is simple to hot reload the audio
+    function. However, C is a compiled language, so it is a lot trickier. The
+    solution was to hot reload a dynamic library that contains the audio
+    function, whilst making sure that any dynamic memory is stored in a global
+    “state” (which is preserved over reloads). Both of these projects included
+    various homemade DSP algorithms
+    <br />
+    <br />
+    <img src="../res/la.png" alt="la livecode setup" width="400px" />
+    <div class="center">
+      <a href="https://www.instagram.com/p/CV_V9fnl06z/">oh look a video :0</a>,
+      <a href="https://www.instagram.com/p/CWF_eltMrLW/">wow heres another!</a>
+    </div>
+  </li>
+</ul>
+
+<h2>art: get it <a href="https://www.instagram.com/mostly_patrick">here</a></h2>
+
+<ul>
+  <li>
+    <a href="https://www.instagram.com/p/CL-GSfsnFlI/">dots spiral</a>: I made
+    this audiovisual algorithmic composition for a livestream hosted by Test
+    Card (a Manchester-based audiovisual collective), using MaxMSP for the audio
+    and OpenFrameworks for the visuals. The audio used 20 randomly generated
+    16-step sequencers, each controlling various parameters. I would then send
+    OSC messages to control the visual program. The visuals used a particle
+    field which would flip between spherical coordinates and noise. Both the
+    audio and visuals included a “stutter” effect, which would loop over the
+    last second of input
+    <br />
+    <br />
+    <img
+      src="../res/dots_spiral.png"
+      alt="a freeze-frame from dots spiral"
+      width="300px"
+    />
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://www.instagram.com/p/CF0IXb7Hi22/"
+      >Other Sounds xine cover</a
+    >: I produced the cover of a local underground music zine (produced by the
+    other sounds student group), using a space filling algorithm consisting of a
+    bunch of “worms” that collide with each other. When they collide, they can
+    return through their path in search of a new route. The algorithm also
+    allows you to load images (such as text), and the worms will treat the
+    outline of the image as a wall. It was made using p5js
+    <br />
+    <br />
+    <img src="../res/xine.png" alt="other sounds xine cover" width="500px" />
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://www.instagram.com/p/CExtieGnv-z/"
+      >pearl with a girl earring</a
+    >: This program converts an image into a grid of coloured circles. Each
+    circle is controlled by the physics engine (i.e, can collide with other
+    circles, and is affected by gravity). These circles are then manipulated
+    using physics, producing a similar and yet unexpected outcome. Using the
+    same system, I made
+    <a href="https://www.instagram.com/p/CEz-wgknqk8/"
+      >the mona with a pearl lisa</a
+    >, which drops the circles onto an uneven plane. Both were made with threejs
+    <br />
+    <br />
+    <img
+      src="../res/pearl.png"
+      alt="pearl with a girl earring - post squishing"
+      width="300px"
+    />
+  </li>
+
+  <br />
+
+  <li>
+    <a href="https://www.instagram.com/p/CGQEmMMn5EU/">facefall</a>: I have a
+    series of pieces using facial recognition and webcam input in
+    OpenFrameworks. facefall is my favourite of these, and uses a similar
+    approach to pearl with a girl earring: convert the input into physics
+    controlled balls. However with this piece, I use OpenCV to detect the
+    outline of a person, and then use Monte Carlo to spawn a new ball (whose
+    texture is extracted from its spawn position)
+    <br />
+    <br />
+    <img
+      src="../res/facefall.png"
+      alt="facefall: featuring myself and my raccoon hat named bandit"
+      width="300px"
+    />
+  </li>
+</ul>

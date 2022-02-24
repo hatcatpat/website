@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "make",
+      "type": "shell",
+      "command": "cd src && make",
+      "group": "build",
+      "presentation": {
+        "reveal":"silent"
+      }
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "./build.sh",
+      "group": "build",
+      "presentation": {
+        "reveal":"silent"
+      }
+    },
+    {
+      "label": "push",
+      "type": "shell",
+      "command": "./push.sh",
+      "group": "build",
+      "presentation": {
+        "reveal":"silent"
+      }
+    }
+  ]
+}
