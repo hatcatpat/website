@@ -10,7 +10,7 @@
     <a href="https://github.com/hatcatpat/compakt">compakt</a>: This project is
     an audio and gui library for quick prototyping of audio applications,
     written entirely in C using SDL, Jack, and FFTW. I wanted to build a tool
-    that would allow me to create my own “instruments", consisting of various
+    that would allow me to create my own "instruments", consisting of various
     audio effects and controls. I implemented all of the audio algorithms from
     scratch, including an FFT based pitch shifter, frequency scope, comb/delay
     lines, and biquad filters
@@ -64,12 +64,12 @@
       >ca</a
     >: la (lua audio) and ca (C audio) are two experiments with livecoding audio
     on the audio thread. My desire was to get as close to the raw audio code as
-    possible, while still maintaining the “live" aspect of “livecoding". Lua is
+    possible, while still maintaining the "live" aspect of "livecoding". Lua is
     an interpreted language, and as such it is simple to hot reload the audio
     function. However, C is a compiled language, so it is a lot trickier. The
     solution was to hot reload a dynamic library that contains the audio
     function, whilst making sure that any dynamic memory is stored in a global
-    “state" (which is preserved over reloads). Both of these projects included
+    "state" (which is preserved over reloads). Both of these projects included
     various homemade DSP algorithms
     <br />
     <br />
@@ -110,7 +110,7 @@
       >Other Sounds xine cover</a
     >: I produced the cover of a local underground music zine (produced by the
     other sounds student group), using a space filling algorithm consisting of a
-    bunch of “worms" that collide with each other. When they collide, they can
+    bunch of "worms" that collide with each other. When they collide, they can
     return through their path in search of a new route. The algorithm also
     allows you to load images (such as text), and the worms will treat the
     outline of the image as a wall. It was made using p5js
