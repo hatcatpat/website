@@ -58,7 +58,8 @@ void head_open() {
         "<link rel='stylesheet' href='themes/");
   write(theme);
   write(".css' />"
-        "<link rel='stylesheet' href='stylesheet.css' />");
+        "<link rel='stylesheet' href='stylesheet.css' />"
+        "<link rel='icon' type='image/png' href='favicon.png' />");
 }
 void head_close() { write("</head>"); }
 
