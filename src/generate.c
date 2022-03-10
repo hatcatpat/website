@@ -125,6 +125,7 @@ void menu() {
   random_list();
   // todo: use an external menu.html for this
   write("<li><a href='pat_lives_here.html'>home</a></li>"
+        "<li><a href='contact.html'>contact</a></li>"
         "<li><a href='hmm.html'>hmm</a></li>"
         "<li><a href='portfolio.html'>portfolio</a></li>");
   write("</ol>");
